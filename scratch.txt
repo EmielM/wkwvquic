@@ -1,0 +1,40 @@
+NetworkProcess.app launch
+
+
+NetworkProcess::singleton().initialize
+
+->
+	
+ChildProcess::initialize
+	NetworkProcess::platformInitialize() = empty
+	NetworkProcess@mac::initializeProcess()
+		con = Connection::createClientConnection(connectionIdentifier)
+		con->open();
+
+->
+
+IPC::Connection::createClientConnection
+
+	new Connection
+	Connection@mac::platformInitialize
+		m_receivePort = MACH_PORT_NULL;
+		m_sendPort = identifier.port;
+		m_xpcConnection = identifier.xpcConnection;
+
+	Connection@mac::open
+
+		// create receive port
+        mach_port_allocate(mach_task_self(), MACH_PORT_RIGHT_RECEIVE, &m_receivePort);
+		
+		// send init message
+        auto encoder = std::make_unique<MessageEncoder>("IPC", "InitializeConnection", 0);
+        encoder->encode(MachPort(m_receivePort, MACH_MSG_TYPE_MAKE_SEND));
+        sendMessage(WTF::move(encoder));
+		
+	    m_receivePortDataAvailableSource = createDataAvailableSource(m_receivePort, m_connectionQueue, [connection] {
+	        connection->receiveSourceEventHandler();
+	    });
+		
+		
+
+	
