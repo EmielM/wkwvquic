@@ -7,15 +7,26 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		177335CD1BD5B14B00D251EA /* src in Resources */ = {isa = PBXBuildFile; fileRef = 177335CC1BD5B14B00D251EA /* src */; settings = {ASSET_TAGS = (); }; };
-		177335CF1BD5B1C900D251EA /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 177335CE1BD5B1C900D251EA /* README.md */; settings = {ASSET_TAGS = (); }; };
-		177335D11BD5B20300D251EA /* scratch.txt in Resources */ = {isa = PBXBuildFile; fileRef = 177335D01BD5B20300D251EA /* scratch.txt */; settings = {ASSET_TAGS = (); }; };
+		173CF2571BD688AE001C6CA1 /* App.m in Sources */ = {isa = PBXBuildFile; fileRef = 173CF2501BD688AE001C6CA1 /* App.m */; };
+		173CF2581BD688AE001C6CA1 /* fishhook.c in Sources */ = {isa = PBXBuildFile; fileRef = 173CF2511BD688AE001C6CA1 /* fishhook.c */; };
+		173CF25A1BD688AE001C6CA1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 173CF2541BD688AE001C6CA1 /* main.m */; };
+		173CF25B1BD688AE001C6CA1 /* wkwvquic.mm in Sources */ = {isa = PBXBuildFile; fileRef = 173CF2551BD688AE001C6CA1 /* wkwvquic.mm */; };
+		173CF25D1BD688C8001C6CA1 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 173CF25C1BD688C8001C6CA1 /* WebKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		177335CC1BD5B14B00D251EA /* src */ = {isa = PBXFileReference; lastKnownFileType = folder; path = src; sourceTree = "<group>"; };
+		173CF24F1BD688AE001C6CA1 /* App.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = App.h; path = src/App.h; sourceTree = "<group>"; };
+		173CF2501BD688AE001C6CA1 /* App.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = App.m; path = src/App.m; sourceTree = "<group>"; };
+		173CF2511BD688AE001C6CA1 /* fishhook.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = fishhook.c; path = src/fishhook.c; sourceTree = "<group>"; };
+		173CF2521BD688AE001C6CA1 /* fishhook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = fishhook.h; path = src/fishhook.h; sourceTree = "<group>"; };
+		173CF2531BD688AE001C6CA1 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = src/Info.plist; sourceTree = "<group>"; };
+		173CF2541BD688AE001C6CA1 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = src/main.m; sourceTree = "<group>"; };
+		173CF2551BD688AE001C6CA1 /* wkwvquic.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = wkwvquic.mm; path = src/wkwvquic.mm; sourceTree = "<group>"; };
+		173CF2561BD688AE001C6CA1 /* wkwvquic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = wkwvquic.h; path = src/wkwvquic.h; sourceTree = "<group>"; };
+		173CF25C1BD688C8001C6CA1 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 		177335CE1BD5B1C900D251EA /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		177335D01BD5B20300D251EA /* scratch.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = scratch.txt; sourceTree = "<group>"; };
+		178536221C4BECDF00014541 /* xpc */ = {isa = PBXFileReference; lastKnownFileType = folder; name = xpc; path = src/xpc; sourceTree = "<group>"; };
 		17D2D7831BD44C1700A9CD69 /* wkwvquic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = wkwvquic.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -24,6 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				173CF25D1BD688C8001C6CA1 /* WebKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -33,9 +45,18 @@
 		17D2D77A1BD44C1700A9CD69 = {
 			isa = PBXGroup;
 			children = (
+				178536221C4BECDF00014541 /* xpc */,
+				173CF25C1BD688C8001C6CA1 /* WebKit.framework */,
+				173CF24F1BD688AE001C6CA1 /* App.h */,
+				173CF2501BD688AE001C6CA1 /* App.m */,
+				173CF2511BD688AE001C6CA1 /* fishhook.c */,
+				173CF2521BD688AE001C6CA1 /* fishhook.h */,
+				173CF2531BD688AE001C6CA1 /* Info.plist */,
+				173CF2541BD688AE001C6CA1 /* main.m */,
+				173CF2551BD688AE001C6CA1 /* wkwvquic.mm */,
+				173CF2561BD688AE001C6CA1 /* wkwvquic.h */,
 				177335D01BD5B20300D251EA /* scratch.txt */,
 				177335CE1BD5B1C900D251EA /* README.md */,
-				177335CC1BD5B14B00D251EA /* src */,
 				17D2D7841BD44C1700A9CD69 /* products */,
 			);
 			sourceTree = "<group>";
@@ -105,8 +126,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				177335CD1BD5B14B00D251EA /* src in Resources */,
-				177335D11BD5B20300D251EA /* scratch.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -117,7 +136,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				177335CF1BD5B1C900D251EA /* README.md in Sources */,
+				173CF2581BD688AE001C6CA1 /* fishhook.c in Sources */,
+				173CF25B1BD688AE001C6CA1 /* wkwvquic.mm in Sources */,
+				173CF25A1BD688AE001C6CA1 /* main.m in Sources */,
+				173CF2571BD688AE001C6CA1 /* App.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

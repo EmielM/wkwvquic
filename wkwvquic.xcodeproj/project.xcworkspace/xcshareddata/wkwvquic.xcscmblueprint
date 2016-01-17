@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "F88D442296F5D6B47DCA095D2B037A0E1BA35F43",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "F88D442296F5D6B47DCA095D2B037A0E1BA35F43" : 0,
+    "94D753953040122F76D30FC1464B1B4DCE436F58" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "76C2E063-8C5C-422B-A407-332F4570CE85",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "F88D442296F5D6B47DCA095D2B037A0E1BA35F43" : "wkwvquic\/",
+    "94D753953040122F76D30FC1464B1B4DCE436F58" : "webkit\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "wkwvquic",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "wkwvquic.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/WebKit\/webkit.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "94D753953040122F76D30FC1464B1B4DCE436F58"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/EmielM\/wkwvquic.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "F88D442296F5D6B47DCA095D2B037A0E1BA35F43"
+    }
+  ]
+}

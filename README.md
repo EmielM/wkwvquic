@@ -9,11 +9,12 @@ Fishhook a bunch of xpc_ initialization calls that the UIProcess uses to setup t
 
 Current status
 --
-Just began. XPC connection setup succesfully intercepted and initial XPC exchange works. Unfortunately XPC is only used to negotiate mach ports over which the WebKit uses its own serialized protocol.
+- 2014-10-20: XPC connection setup intercept and initial XPC exchange works. Unfortunately XPC is only used to negotiate mach ports over which the WebKit uses its own serialized protocol.
+- 2015-01-18: Setup appropriate mach ports and serialization of init message working
 
 Next up
 --
-Setup mach ports as done in IPC::Connection(mac)::open and pretend to be a proper NetworkProcess.app.
+- Get serialization working better, try to see if the initialization message (2k+) is easy to parse
 
 Future impediments
 --
